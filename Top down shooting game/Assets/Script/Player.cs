@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         PlayerMove();
-        PlayerShoot();
+       
     }
 
     void PlayerMove()
@@ -30,11 +30,11 @@ public class Player : MonoBehaviour
         rb.MovePosition(rb.position + moveVelocity);
     }  
 
-    void PlayerShoot()
+    /*void PlayerShoot()
     {
         if (Input.GetMouseButtonDown(0))
         {
             Instantiate(Bullet,PlayerPos.position,Quaternion.identity);
         }
-    }
+    }*/
 }

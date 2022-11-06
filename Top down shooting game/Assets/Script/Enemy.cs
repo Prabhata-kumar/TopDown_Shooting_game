@@ -18,4 +18,9 @@ public class Enemy : MonoBehaviour
     {
         transform.position = Vector2.MoveTowards(transform.position,PlayerPos.position,speed * Time.deltaTime) ;
     }
+
+    public void Die()
+    {
+        Destroy(gameObject);
+    }
 }
